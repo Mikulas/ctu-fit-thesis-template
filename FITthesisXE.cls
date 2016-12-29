@@ -13,10 +13,12 @@
 %   * DejaVu Fonts (http://dejavu-fonts.org/)
 % Or choose another fonts you like and change \setmainfont and \setmonofont.
 % 
-% @author:  Ondrej Guth <ondrej.guth@fit.cvut.cz>, 
-%           Jakub Jirutka <jakub.jirutka@fit.cvut.cz>
-% @version: 2013-05-10
 % 
+% @author:  Ondrej Guth <ondrej.guth@fit.cvut.cz>,
+%           Jakub Jirutka <jakub.jirutka@fit.cvut.cz>,
+%           Miroslav Hrončok <miroslav.hroncok@fit.cvut.cz>,
+%           Mikulas Dite <ditemiku@fit.cvut.cz>
+% @version: 2016-12-29
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{template/FITthesisXE}[2013/04/26 CTU FIT customized class for theses]
 
