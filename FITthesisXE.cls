@@ -76,6 +76,7 @@
 
 % symbol footnotes to prevent collision with citations
 \RequirePackage [symbol] {footmisc}
+\@addtoreset{footnote}{page}
 \renewcommand{\thefootnote}{\ifcase\value{footnote}\or$\dagger$\or$\ddagger$\or$\dagger\dagger$\or$\ddagger\ddagger$\or$\infty$\fi}
 
 % microtype currently supports only protrusion with XeLaTeX :(
