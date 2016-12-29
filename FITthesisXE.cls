@@ -70,7 +70,8 @@
 \RequirePackage {minted}		% source code highlighting via Pygments
 \RequirePackage {etoolbox}
 \RequirePackage {nameref}
-\RequirePackage {pdfpages}		% \includepdf 
+\RequirePackage {amssymb}		% \nexist
+\RequirePackage {pdfpages}		% \includepdf
 
 % microtype currently supports only protrusion with XeLaTeX :(
 \RequirePackage [protrusion=true] {microtype}
