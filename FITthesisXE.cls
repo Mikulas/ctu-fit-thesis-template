@@ -64,7 +64,8 @@
 \RequirePackage {floatrow}		% ...so we can force caption position
 
 \RequirePackage {fontspec}		% font selection for XeLaTeX
-\RequirePackage {xltxtra}		% extras for XeTeX
+% extras for XeTeX, without superscript redefinition that breaks footnote symbols
+\RequirePackage [no-sscript] {xltxtra}
 \RequirePackage {polyglossia}	% replacement for babel
 \RequirePackage [pdfusetitle] {hyperref}		% hyperlinks support
 \RequirePackage {minted}		% source code highlighting via Pygments
@@ -72,6 +73,10 @@
 \RequirePackage {nameref}
 \RequirePackage {amssymb}		% \nexist
 \RequirePackage {pdfpages}		% \includepdf
+
+% symbol footnotes to prevent collision with citations
+\RequirePackage [symbol] {footmisc}
+\renewcommand{\thefootnote}{\ifcase\value{footnote}\or$\dagger$\or$\ddagger$\or$\dagger\dagger$\or$\ddagger\ddagger$\or$\infty$\fi}
 
 % microtype currently supports only protrusion with XeLaTeX :(
 \RequirePackage [protrusion=true] {microtype}
